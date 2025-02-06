@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --color-light: #e0dddd;
-    --color-dark: #172026;
-    --color-background-001: #090d0f;
-    --color-background-002: #0f1418;
+    --color-dark: #080808;
+    --color-background-001: #060a0c;
+    --color-background-002: #141a1f;
     --color-primary: #0FC2C0;
     --color-secondary: #045c5a;
 }
@@ -12,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Charm", serif;
 }
 
 body {
@@ -28,44 +32,58 @@ body {
     width: 100%;
     background-color: var(--color-background-002);
     text-align: center;
+    border-radius: 20px;
+
 }
 
 header {
-    background-color: var(--color-dark);
+    background-image: linear-gradient(to bottom, #070b0e, var(--color-background-002));
 }
 
 header img {
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 50%;
+    border: 2px solid var(--color-dark);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
 }
 header h1 {
+
     margin-top: 10px;
     color: var(--color-primary);
 }
 
 header p {
     margin: 10px auto;
+    font-weight: 700;
 }
 
-#botao {
+#botoes {
     display: flex;
     flex-direction: column;
 }
 
-a {
-    background-color: var(--color-primary);
-    color: var(--color-dark);
-    font-weight: bold;
+.botao {
     width: 95%;
-    height: 50px;
-    border-radius: 20px;
-    margin: 10px auto;
-
-
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 10px;
+    background-color: var(--color-primary);
 }
 
-a:hover {
+.botao:hover {
     background-color: var(--color-secondary);
-    color: var(--color-light);
-    transition: .2s;
+}
+
+a {
+    color: var(--color-dark);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 410px) {
+    #container {
+        width: 500px;
+        height: 600px;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.356);
+    }
 }
