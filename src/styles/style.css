@@ -53,9 +53,7 @@ header p {
     font-weight: 700;
 }
 
-
-
-#botoes {
+/* #botoes {
     display: flex;
     flex-direction: column;
 }
@@ -75,9 +73,9 @@ a {
     color: var(--color-dark);
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-} 
+}  */
 
-/* #botoes {
+#botoes {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
@@ -125,7 +123,7 @@ a {
     color: var(--color-dark);
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-} */
+} 
 
 @media screen and (min-width: 410px) {
     #container {
