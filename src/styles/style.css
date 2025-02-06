@@ -4,8 +4,8 @@
 :root {
     --color-light: #e0dddd;
     --color-dark: #080808;
-    --color-background-001: #060a0c;
-    --color-background-002: #141a1f;
+    --color-background-001: #2e2e2e;
+    --color-background-002: #404346;
     --color-primary: #0FC2C0;
     --color-secondary: #045c5a;
 }
@@ -36,14 +36,10 @@ body {
 
 }
 
-header {
-    background-image: linear-gradient(to bottom, #070b0e, var(--color-background-002));
-}
-
 header img {
     margin-top: 50px;
     border-radius: 50%;
-    border: 2px solid var(--color-dark);
+    border: 1px solid var(--color-dark);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
 }
 header h1 {
@@ -57,11 +53,12 @@ header p {
     font-weight: 700;
 }
 
+
+
 #botoes {
     display: flex;
     flex-direction: column;
 }
-
 .botao {
     width: 95%;
     padding: 15px;
@@ -78,7 +75,57 @@ a {
     color: var(--color-dark);
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+} 
+
+/* #botoes {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    grid-template-areas: 
+    'portfolio portfolio'
+    'github linkedin'
+    'tiktok youtube';
 }
+
+#portfolio {
+    grid-area: portfolio;
+}
+
+#github {
+    grid-area: github;
+}
+
+#linkedin {
+    grid-area: linkedin;
+}
+
+#tiktok {
+    grid-area: tiktok;
+}
+
+#youtube {
+    grid-area: youtube;
+}
+
+.botao {
+    width: 95%;
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-primary);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.342);
+}
+
+.botao:hover {
+    background-color: var(--color-secondary);
+}
+
+a {
+    color: var(--color-dark);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+} */
 
 @media screen and (min-width: 410px) {
     #container {
